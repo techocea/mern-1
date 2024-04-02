@@ -12,7 +12,7 @@ const UpdateUser = () => {
     const photoURL = form.photoURL.value;
 
     const loadedUser = { name, email, photoURL };
-    fetch(`http://localhost:5555/users/${loader._id}`, {
+    fetch(`https://example-1zyq.onrender.com/users/${loader._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(loadedUser),

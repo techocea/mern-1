@@ -13,7 +13,7 @@ const CreateUser = () => {
     const user = { name, email, photoURL };
     console.log(user);
 
-    fetch("http://localhost:5555/users", {
+    fetch("https://example-1zyq.onrender.com/users", {
       method: "POST",
       headers: {
         "content-type": "application/json",

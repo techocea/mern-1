@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5555/users"),
+        loader: () => fetch("https://example-1zyq.onrender.com/users"),
       },
       {
         path: "/create-user",
@@ -29,7 +29,8 @@ const router = createBrowserRouter([
       {
         path: "/update-user/:id",
         element: <UpdateUser />,
-        loader: (params) => fetch(`http://localhost:5555/users/${params._id}`),
+        loader: (params) =>
+          fetch(`https://example-1zyq.onrender.com/users/${params._id}`),
       },
     ],
   },

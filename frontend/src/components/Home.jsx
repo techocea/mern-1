@@ -6,7 +6,7 @@ const Home = () => {
   const [users, setUsers] = useState(loadedUser);
 
   const handleDelete = (_id) => {
-    fetch(`http://localhost:5555/users/${_id}`, {
+    fetch(`https://example-1zyq.onrender.com/users/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
